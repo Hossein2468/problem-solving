@@ -20,7 +20,7 @@ def multiplication_matrix(x , y):
     while a < len(x) :
         list1 = []
         d = 0
-        while d < len(x):
+        while d < len(y[0]):
             b = x[a] 
             c = 0 
             e = 0 
