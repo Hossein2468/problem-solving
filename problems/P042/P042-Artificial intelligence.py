@@ -211,4 +211,4 @@ hello = hi(me_1 , the_target , obstacles , distance)
 me.pendown()
 for way in hello :
     print(way)
-    me.goto(way[0] , way[1])
+    me.goto(pos(way[0]) , pos(way[1]))
