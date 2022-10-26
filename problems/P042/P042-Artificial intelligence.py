@@ -48,4 +48,167 @@ me.goto(pos(me_1[0]) , pos(me_1[1]))
 me.pencolor('blue')
 target.goto(pos(the_target[0]) , pos(the_target[1]))
 
-distance = [the_target[0] - me_1[1] , the_target[1] - me_1[1]] 
+distance = [the_target[0] - me_1[0] , the_target[1] - me_1[1]] 
+def hi(a , b , c , distance) :
+    the_way = ['hi' , 'hello']
+    while distance != [0 , 0] :
+        if distance[0] >= 0 and distance[1] >= 0 :
+            x1 = True 
+            x2 = True 
+            a1 = [a[0] + 1 , a[1]] 
+            a2 = [a[0] , a[1] + 1] 
+            for d1 in c :
+                for e1 in d1 :
+                    if a1 == e1 :
+                        x1 = False 
+                    if a2 == e1 :
+                        x2 = False  
+            if x1 == True and a1 != the_way[-1] and a1 != the_way[-2] : 
+                the_way.append(a1) 
+                distance = [b[0] - a1[0] , b[1] - a1[1]]
+                a = a1 
+            if x2 == True and a2 != the_way[-1] and a2 != the_way[-2] :
+                the_way.append(a2) 
+                distance = [b[0] - a2[0] , b[1] - a2[1]]
+                a = a2 
+            if x1 == False and x2 == False :
+                x3 = True 
+                x4 = True 
+                a3 = [a[0] - 1 , a[1]] 
+                a4 = [a[0] , a[1] - 1] 
+                for d2 in c :
+                    for e2 in d2 :
+                        if a3 == e2 :
+                            x3 = False 
+                        if a4 == e2 :
+                            x4 = False 
+                if x3 == True and a3 != the_way[-1] and a3 != the_way[-2] :
+                    the_way.append(a3) 
+                    distance = [b[0] - a3[0] , b[1] - a3[1]]
+                    a = a3 
+                if x4 == True and a4 != the_way[-1] and a4 != the_way[-2] :
+                    the_way.append(a4) 
+                    distance = [b[0] - a4[0] , b[1] - a4[1]]
+                    a = a4 
+        if distance[0] <= 0 and distance[1] <= 0 :
+            x1 = True 
+            x2 = True 
+            a1 = [a[0] - 1 , a[1]] 
+            a2 = [a[0] , a[1] - 1] 
+            for d1 in c :
+                for e1 in d1 :
+                    if a1 == e1 :
+                        x1 = False 
+                    if a2 == e1 :
+                        x2 = False 
+            if x1 == True and a1 != the_way[-1] and a1 != the_way[-2] : 
+                the_way.append(a1) 
+                distance = [b[0] - a1[0] , b[1] - a1[1]]
+                a = a1
+            if x2 == True and a2 != the_way[-1] and a2 != the_way[-2] :
+                the_way.append(a2)
+                distance = [b[0] - a2[0] , b[1] - a2[1]]
+                a = a2
+            if x1 == False and x2 == False :
+                x3 = True 
+                x4 = True 
+                a3 = [a[0] + 1 , a[1]] 
+                a4 = [a[0] , a[1] + 1] 
+                for d2 in c :
+                    for e2 in d2 :
+                        if a3 == e2 :
+                            x3 = False 
+                        if a4 == e2 :
+                            x4 = False 
+                if x3 == True and a3 != the_way[-1] and a3 != the_way[-2] :
+                    the_way.append(a3) 
+                    distance = [b[0] - a3[0] , b[1] - a3[1]]
+                    a = a3 
+                if x4 == True and a4 != the_way[-1] and a4 != the_way[-2] :
+                    the_way.append(a4) 
+                    distance = [b[0] - a4[0] , b[1] - a4[1]]
+                    a = a4 
+        if distance[0] >= 0 and distance[1] <= 0 :
+            x1 = True 
+            x2 = True 
+            a1 = [a[0] + 1 , a[1]] 
+            a2 = [a[0] , a[1] - 1] 
+            for d1 in c :
+                for e1 in d1 :
+                    if a1 == e1 :
+                        x1 = False 
+                    if a2 == e1 :
+                        x2 = False 
+            if x1 == True and a1 != the_way[-1] and a1 != the_way[-2] : 
+                the_way.append(a1)
+                distance = [b[0] - a1[0] , b[1] - a1[1]] 
+                a = a1 
+            if x2 == True and a2 != the_way[-1] and a2 != the_way[-2] :
+                the_way.append(a2)
+                distance = [b[0] - a2[0] , b[1] - a2[1]]
+                a = a2 
+            if x1 == False and x2 == False :
+                x3 = True 
+                x4 = True 
+                a3 = [a[0] - 1 , a[1]] 
+                a4 = [a[0] , a[1] + 1] 
+                for d2 in c :
+                    for e2 in d2 :
+                        if a3 == e2 :
+                            x3 = False 
+                        if a4 == e2 :
+                            x4 = False 
+                if x3 == True and a3 != the_way[-1] and a3 != the_way[-2] :
+                    the_way.append(a3) 
+                    distance = [b[0] - a3[0] , b[1] - a3[1]]
+                    a = a3 
+                if x4 == True and a4 != the_way[-1] and a4 != the_way[-2] :
+                    the_way.append(a4) 
+                    distance = [b[0] - a4[0] , b[1] - a4[1]]
+                    a = a4 
+        if distance[0] <= 0 and distance[1] >= 0 :
+            x1 = True 
+            x2 = True 
+            a1 = [a[0] - 1 , a[1]] 
+            a2 = [a[0] , a[1] + 1] 
+            for d1 in c :
+                for e1 in d1 :
+                    if a1 == e1 :
+                        x1 = False 
+                    if a2 == e1 :
+                        x2 = False 
+            if x1 == True and a1 != the_way[-1] and a1 != the_way[-2] : 
+                the_way.append(a1) 
+                distance = [b[0] - a1[0] , b[1] - a1[1]]
+                a = a1 
+            if x2 == True and a2 != the_way[-1] and a2 != the_way[-2] :
+                the_way.append(a2)
+                distance = [b[0] - a2[0] , b[1] - a2[1]]
+                a = a2 
+            if x1 == False and x2 == False :
+                x3 = True 
+                x4 = True 
+                a3 = [a[0] + 1 , a[1]] 
+                a4 = [a[0] , a[1] - 1] 
+                for d2 in c :
+                    for e2 in d2 :
+                        if a3 == e2 :
+                            x3 = False 
+                        if a4 == e2 :
+                            x4 = False 
+                if x3 == True and a3 != the_way[-1] and a3 != the_way[-2] :
+                    the_way.append(a3) 
+                    distance = [b[0] - a3[0] , b[1] - a3[1]]
+                    a = a3 
+                if x4 == True and a4 != the_way[-1] and a4 != the_way[-2] :
+                    the_way.append(a4)
+                    distance = [b[0] - a4[0] , b[1] - a4[1]]
+                    a = a4 
+    the_way.remove('hi')
+    return the_way
+
+hello = hi(me_1 , the_target , obstacles , distance)
+me.pendown()
+for way in hello :
+    print(way)
+    me.goto(way[0] , way[1])
