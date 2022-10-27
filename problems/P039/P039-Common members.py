@@ -7,9 +7,12 @@ for m in range(n - 1):
     o = list(map(lambda x : int(x) , m))
     a.append(o)
 numbers = {'a'}
-for b in a :
-    for c in b :
-        if c in q :
-            numbers.add(c)
+b = 0 
+while b < len(a) :
+    c = a[b] 
+    for d in q :
+        if d in c :
+            b += 1 
+    numbers.add(d)
 numbers.remove('a')
 print(numbers)
