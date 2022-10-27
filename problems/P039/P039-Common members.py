@@ -7,16 +7,9 @@ for m in range(n - 1):
     o = list(map(lambda x : int(x) , m))
     a.append(o)
 numbers = {'a'}
-b = 0 
-while b < len(q):
-    for d in a :
-        for e in d :
-            c = q[b]
-            if e == c :
-                numbers.add(c)
-                b += 1 
-            else:
-                b += 1
-                
+for b in a :
+    for c in b :
+        if c in q :
+            numbers.add(c)
 numbers.remove('a')
 print(numbers)
