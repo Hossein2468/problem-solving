@@ -50,7 +50,7 @@ target.goto(pos(the_target[0]) , pos(the_target[1]))
 
 distance = [the_target[0] - me_1[0] , the_target[1] - me_1[1]] 
 def hi(a , b , c , distance) :
-    the_way = ['hi' , 'hello']
+    the_way = [me_1]
     while distance != [0 , 0] :
         if distance[0] >= 0 and distance[1] >= 0 :
             x1 = True 
@@ -63,14 +63,16 @@ def hi(a , b , c , distance) :
                         x1 = False 
                     if a2 == e1 :
                         x2 = False  
-            if x1 == True and a1 != the_way[-1] and a1 != the_way[-2] : 
-                the_way.append(a1) 
-                distance = [b[0] - a1[0] , b[1] - a1[1]]
-                a = a1 
-            if x2 == True and a2 != the_way[-1] and a2 != the_way[-2] :
-                the_way.append(a2) 
-                distance = [b[0] - a2[0] , b[1] - a2[1]]
-                a = a2 
+            if x1 == True :
+                if a1 not in the_way :
+                    the_way.append(a1) 
+                    distance = [b[0] - a1[0] , b[1] - a1[1]]
+                    a = a1 
+            if x2 == True :
+                if a2 not in the_way :
+                    the_way.append(a2) 
+                    distance = [b[0] - a2[0] , b[1] - a2[1]]
+                    a = a2 
             if x1 == False and x2 == False :
                 x3 = True 
                 x4 = True 
@@ -82,14 +84,16 @@ def hi(a , b , c , distance) :
                             x3 = False 
                         if a4 == e2 :
                             x4 = False 
-                if x3 == True and a3 != the_way[-1] and a3 != the_way[-2] :
-                    the_way.append(a3) 
-                    distance = [b[0] - a3[0] , b[1] - a3[1]]
+                if x3 == True :
+                    if a3 not in the_way :
+                        the_way.append(a3) 
+                        distance = [b[0] - a3[0] , b[1] - a3[1]]
                     a = a3 
-                if x4 == True and a4 != the_way[-1] and a4 != the_way[-2] :
-                    the_way.append(a4) 
-                    distance = [b[0] - a4[0] , b[1] - a4[1]]
-                    a = a4 
+                if x4 == True :
+                    if a4 not in the_way :
+                        the_way.append(a4) 
+                        distance = [b[0] - a4[0] , b[1] - a4[1]]
+                        a = a4 
         if distance[0] <= 0 and distance[1] <= 0 :
             x1 = True 
             x2 = True 
@@ -101,14 +105,16 @@ def hi(a , b , c , distance) :
                         x1 = False 
                     if a2 == e1 :
                         x2 = False 
-            if x1 == True and a1 != the_way[-1] and a1 != the_way[-2] : 
-                the_way.append(a1) 
-                distance = [b[0] - a1[0] , b[1] - a1[1]]
-                a = a1
-            if x2 == True and a2 != the_way[-1] and a2 != the_way[-2] :
-                the_way.append(a2)
-                distance = [b[0] - a2[0] , b[1] - a2[1]]
-                a = a2
+            if x1 == True :
+                if a1 not in the_way : 
+                    the_way.append(a1) 
+                    distance = [b[0] - a1[0] , b[1] - a1[1]]
+                    a = a1
+            if x2 == True :
+                if a2 not in the_way :
+                    the_way.append(a2)
+                    distance = [b[0] - a2[0] , b[1] - a2[1]]
+                    a = a2
             if x1 == False and x2 == False :
                 x3 = True 
                 x4 = True 
@@ -120,14 +126,16 @@ def hi(a , b , c , distance) :
                             x3 = False 
                         if a4 == e2 :
                             x4 = False 
-                if x3 == True and a3 != the_way[-1] and a3 != the_way[-2] :
-                    the_way.append(a3) 
-                    distance = [b[0] - a3[0] , b[1] - a3[1]]
-                    a = a3 
-                if x4 == True and a4 != the_way[-1] and a4 != the_way[-2] :
-                    the_way.append(a4) 
-                    distance = [b[0] - a4[0] , b[1] - a4[1]]
-                    a = a4 
+                if x3 == True :
+                    if a3 not in the_way :
+                        the_way.append(a3) 
+                        distance = [b[0] - a3[0] , b[1] - a3[1]]
+                        a = a3 
+                if x4 == True :
+                    if a4 not in the_way :
+                        the_way.append(a4) 
+                        distance = [b[0] - a4[0] , b[1] - a4[1]]
+                        a = a4 
         if distance[0] >= 0 and distance[1] <= 0 :
             x1 = True 
             x2 = True 
@@ -139,14 +147,16 @@ def hi(a , b , c , distance) :
                         x1 = False 
                     if a2 == e1 :
                         x2 = False 
-            if x1 == True and a1 != the_way[-1] and a1 != the_way[-2] : 
-                the_way.append(a1)
-                distance = [b[0] - a1[0] , b[1] - a1[1]] 
-                a = a1 
-            if x2 == True and a2 != the_way[-1] and a2 != the_way[-2] :
-                the_way.append(a2)
-                distance = [b[0] - a2[0] , b[1] - a2[1]]
-                a = a2 
+            if x1 == True :
+                if a1 not in the_way : 
+                    the_way.append(a1)
+                    distance = [b[0] - a1[0] , b[1] - a1[1]] 
+                    a = a1 
+            if x2 == True :
+                if a2 not in the_way :
+                    the_way.append(a2)
+                    distance = [b[0] - a2[0] , b[1] - a2[1]]
+                    a = a2 
             if x1 == False and x2 == False :
                 x3 = True 
                 x4 = True 
@@ -158,14 +168,16 @@ def hi(a , b , c , distance) :
                             x3 = False 
                         if a4 == e2 :
                             x4 = False 
-                if x3 == True and a3 != the_way[-1] and a3 != the_way[-2] :
-                    the_way.append(a3) 
-                    distance = [b[0] - a3[0] , b[1] - a3[1]]
-                    a = a3 
-                if x4 == True and a4 != the_way[-1] and a4 != the_way[-2] :
-                    the_way.append(a4) 
-                    distance = [b[0] - a4[0] , b[1] - a4[1]]
-                    a = a4 
+                if x3 == True :
+                    if a3 not in the_way :
+                        the_way.append(a3) 
+                        distance = [b[0] - a3[0] , b[1] - a3[1]]
+                        a = a3 
+                if x4 == True :
+                    if a4 not in the_way :
+                        the_way.append(a4) 
+                        distance = [b[0] - a4[0] , b[1] - a4[1]]
+                        a = a4 
         if distance[0] <= 0 and distance[1] >= 0 :
             x1 = True 
             x2 = True 
@@ -177,14 +189,16 @@ def hi(a , b , c , distance) :
                         x1 = False 
                     if a2 == e1 :
                         x2 = False 
-            if x1 == True and a1 != the_way[-1] and a1 != the_way[-2] : 
-                the_way.append(a1) 
-                distance = [b[0] - a1[0] , b[1] - a1[1]]
-                a = a1 
-            if x2 == True and a2 != the_way[-1] and a2 != the_way[-2] :
-                the_way.append(a2)
-                distance = [b[0] - a2[0] , b[1] - a2[1]]
-                a = a2 
+            if x1 == True :
+                if a1 not in the_way : 
+                    the_way.append(a1) 
+                    distance = [b[0] - a1[0] , b[1] - a1[1]]
+                    a = a1 
+            if x2 == True :
+                if a2 not in the_way :
+                    the_way.append(a2)
+                    distance = [b[0] - a2[0] , b[1] - a2[1]]
+                    a = a2 
             if x1 == False and x2 == False :
                 x3 = True 
                 x4 = True 
@@ -196,15 +210,16 @@ def hi(a , b , c , distance) :
                             x3 = False 
                         if a4 == e2 :
                             x4 = False 
-                if x3 == True and a3 != the_way[-1] and a3 != the_way[-2] :
-                    the_way.append(a3) 
-                    distance = [b[0] - a3[0] , b[1] - a3[1]]
-                    a = a3 
-                if x4 == True and a4 != the_way[-1] and a4 != the_way[-2] :
-                    the_way.append(a4)
-                    distance = [b[0] - a4[0] , b[1] - a4[1]]
-                    a = a4 
-    the_way.remove('hi')
+                if x3 == True :
+                    if a3 not in the_way :
+                        the_way.append(a3) 
+                        distance = [b[0] - a3[0] , b[1] - a3[1]]
+                        a = a3 
+                if x4 == True :
+                    if a4 not in the_way :
+                        the_way.append(a4)
+                        distance = [b[0] - a4[0] , b[1] - a4[1]]
+                        a = a4 
     return the_way
 
 hello = hi(me_1 , the_target , obstacles , distance)
