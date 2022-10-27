@@ -13,5 +13,6 @@ words_list.remove("END")
 def position(a):
     from collections import namedtuple 
     pos = namedtuple('position' , ['y' , 'x'])
+    
 
 print(position(letters_list))
