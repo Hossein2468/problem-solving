@@ -6,10 +6,13 @@ for m in range(n - 1):
     m = input("Enter the numbers list: ").split()
     o = list(map(lambda x : int(x) , m))
     a.append(o)
-b = 0 
-while b < len(a) :
-    c = a[b] 
-    for d in q :
-        if d in c :
-            b += 1 
-    print(d)
+for c in q :
+    x = True 
+    b = 0 
+    while b < len(a) :
+        d = a[b] 
+        if c not in d :
+            x = False 
+        b += 1 
+    if x == True :
+        print(c)
