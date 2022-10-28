@@ -7,14 +7,12 @@ while True :
     sentences.append(a)
 b = 1
 while b < len (sentences) :
-    c = sentences[b]
-    d = sentences[b - 1] 
+    c = sentences[0]
+    d = sentences[b] 
     for e in c :
         for f in d :
             if e == f : 
                 word.append(e)
-                a1 = c.index(e) 
-                a2 = c.index(f)
             if e != f : 
                     g = 0 
                     while g < len(e):
@@ -23,13 +21,18 @@ while b < len (sentences) :
                             if i == f :
                                 word.append(f)
                         g += 1
+            if e != f : 
+                    g = 0 
+                    while g < len(f):
+                        for h in range((g + 1) , (len(f) + 1)):
+                            i = f[g : h]
+                            if i == e :
+                                word.append(e)
+                        g += 1
     b += 1 
 
-counts = []
-for j in word :
-    k = word.count(j)
-    counts.append(k)
-l = counts.index(max(counts))
+lentghs = list(map(lambda x : len(x) , word))
+l = lentghs.index(max(lentghs))
 m = word[l] 
 n = 0
 dict1 = {} 
