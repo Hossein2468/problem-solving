@@ -7,8 +7,8 @@ while True :
     sentences.append(a)
 b = 1
 while b < len (sentences) :
-    c = sentences[b]
-    d = sentences[b - 1] 
+    c = sentences[0]
+    d = sentences[b] 
     for e in c :
         for f in d :
             if e == f : 
