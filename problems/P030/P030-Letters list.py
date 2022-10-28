@@ -11,7 +11,7 @@ while o != "END" :
 words_list.remove("END")
 
 def position(a):
-    positions = {}
+    positions = []
     from collections import namedtuple 
     pos = namedtuple('position' , ['y' , 'x'])
     for b in range(len(a)) :
@@ -19,7 +19,10 @@ def position(a):
         for c in range(len(a[b])) :
             c1 = b1[c]
             d = pos(b + 1 , c + 1)
-            positions.update({c1 : [d.y , d.x]}) 
+            poses = f'{c1} {d.y} {d.x}'.split()
+            poses1 = list(map(lambda x : int(x) ,poses[1:]))
+            poses2 = [poses[0] , poses1]
+            positions.append(poses2)
     return positions
 
 print(position(letters_list))
