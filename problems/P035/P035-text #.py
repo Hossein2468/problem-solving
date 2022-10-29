@@ -18,27 +18,27 @@ while b < len (sentences) :
                 if b == 1 :
                     words.append(e)
             if e != f : 
-                    g = 0 
-                    while g < len(e):
-                        for h in range((g + 1) , (len(e) + 1)):
-                            i = e[g : h]
-                            if i == f :
-                                word.append(f)
+                g = 0 
+                while g < len(e):
+                    for h in range((g + 1) , (len(e) + 1)):
+                        i = e[g : h]
+                        if i == f :
+                            word.append(f)
+                            words.append(e)
+                            if b == 1 :
                                 words.append(e)
-                                if b == 1 :
-                                    words.append(e)
-                        g += 1
-                        if e != f : 
-                            g1 = 0 
-                            while g1 < len(f):
-                                for h1 in range((g + 1) , (len(f) + 1)):
-                                    i1 = f[g : h]
-                                    if i1 == e :
-                                        word.append(e)
-                                        words.append(f)
-                                        if b == 1 :
-                                            words.append(e)
-                                g1 += 1
+                    g += 1
+            if e != f : 
+                g = 0 
+                while g < len(f):
+                    for h in range((g + 1) , (len(f) + 1)):
+                        i = f[g : h]
+                        if i == e :
+                            word.append(e)
+                            words.append(f)
+                            if b == 1 :
+                                words.append(e)
+                    g += 1
     b += 1 
 
 lentghs = list(map(lambda x : len(x) , word))
