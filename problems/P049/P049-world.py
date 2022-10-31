@@ -37,4 +37,6 @@ while stars != {} :
             h = (g / light_sec)
             print(f'{e} : {h} seconds')
             a11 = stars[e]
-            stars[e] = stars['e']
+            target = e 
+            stars.pop(target)
+            break 
