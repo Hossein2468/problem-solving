@@ -7,12 +7,9 @@ for m in range(n - 1):
     o = list(map(lambda x : int(x) , m))
     a.append(o)
 for c in set(q) :
-    x = True 
-    b = 0 
-    while b < len(a) :
-        d = a[b] 
-        if c not in set(d) :
-            x = False 
-        b += 1 
-    if x == True :
-        print(c)
+    x = 1 
+    for d in a :
+        if c in set(d) :
+            x += 1  
+    if x == n : 
+        print(c) 
