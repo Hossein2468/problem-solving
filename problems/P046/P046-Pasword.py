@@ -1,2 +1,1 @@
-n = 'I have no idea'
-print(n)
+text = input("Enter the text: ")
