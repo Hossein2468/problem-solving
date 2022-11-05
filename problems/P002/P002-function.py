@@ -1,14 +1,19 @@
-a = int(input("enter the first number:"))
-b = int(input("enter the second number:"))
-def my_sum(x , y): 
-    print (x + y)
-def my_subtract(x , y):
-    print (y - x) 
-def my_multiply(x , y):
-    print (x * y) 
-def my_divide(x , y):
-    print (y / x)
-my_sum(a , b)
-my_subtract(a , b)
-my_multiply(a , b)
-my_divide(a , b)
+question = str(input("Do you like to run with sample input? (y/n): "))
+if question == 'y' : 
+    a = 2 
+    b = 3
+if question == 'n' : 
+    a = int(input("enter the first number:"))
+    b = int(input("enter the second number:"))
+    def my_sum(x , y): 
+        print (x + y)
+    def my_subtract(x , y):
+        print (y - x) 
+    def my_multiply(x , y):
+        print (x * y) 
+    def my_divide(x , y):
+        print (y / x)
+    my_sum(a , b)
+    my_subtract(a , b)
+    my_multiply(a , b)
+    my_divide(a , b)
