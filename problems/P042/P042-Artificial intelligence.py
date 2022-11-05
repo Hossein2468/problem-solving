@@ -456,6 +456,7 @@ def hi(a , b , c , distance) :
 
 hello = hi(me_1 , the_target , obstacles , distance)
 me.pendown()
+me.speed(1)
 for way in hello :
     print(way)
     me.goto(pos(way[0]) , pos(way[1]))
