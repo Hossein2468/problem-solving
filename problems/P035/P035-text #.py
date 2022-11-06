@@ -1,10 +1,14 @@
-sentences = []
+question = str(input("Do you like to run with sample input? (y/n): "))
+if question == 'y' : 
+    sentences = ['some yes ok' , 'yes will some do it' , 'it is somehow good yes' , 'yes someone found it']
+if question == 'n' : 
+    sentences = []
+    while True :
+        a = input("Enter the sentences: ")
+        if a == "END" :
+            break 
+        sentences.append(a)
 words = []
-while True :
-    a = input("Enter the sentences: ")
-    if a == "END" :
-        break 
-    sentences.append(a)
 b = 1
 while b < len (sentences) :
     c = sentences[0]
