@@ -3,13 +3,12 @@ if question == 'y' :
     a = 1400 
     b = 1401 
 if question == 'n' : 
-
     a = int(input("enter the first year: "))
     b = int(input("enter the second year: "))
-a = (a * 365)
-b = (b * 365)
-c = (a - b)
+a1 = (a * 365)
+b1 = (b * 365)
+c = (a1 - b1)
 if (c < 0):
-    print (-c)
+    print (f'{-c} days between {a} and {b}')
 else:
-    print (+c)
+    print (f'{+c} days between {a} and {b}')
