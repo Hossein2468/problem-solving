@@ -1,2 +1,1 @@
-x ="I have no idea"
-print(x)
+a = str(input("Enter the link address: "))
