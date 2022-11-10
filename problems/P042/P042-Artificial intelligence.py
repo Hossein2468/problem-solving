@@ -6,23 +6,29 @@ def pos(x) :
     a = x * 35 
     return a 
 
-n = input("Enter the positions: ").split(')')
-n1 = n[0]
-n2 = n[1]
-me_1 = list(map(lambda x : int(x) , n1[1:].split(',')))
-the_target = list(map(lambda x : int(x) , n2[1:].split(',')))
-m = int(input("Enter the number of obstacles: "))
-obstacles = []
-for m1 in range(m):
-    m1 = input("Enter the obsracles: ").split(')')
-    m2 = 0 
-    obstacles1 = []
-    while (m2 + 1) < len(m1) :
-        m3 = m1[m2] 
-        m4 = list(map(lambda x : int(x) , m3[1:].split(',')))
-        obstacles1.append(m4)
-        m2 += 1
-    obstacles.append(obstacles1)
+question = str(input("Do you like to run with sample input? (y/n): "))
+if question == 'y' : 
+    me_1 = [4 , 2]
+    the_target = [7 , 9]
+    obstacles = [[[2 , 1] , [2 , 2] , [3 , 2] , [3 , 3] , [4 , 3] , [5 , 3] , [5 , 2] , [6 , 2] , [7 , 2]] , [[7 , 4] , [7 , 3] , [8 , 3]] , [[10 , 2] , [10 , 3] , [10 , 4] , [10 , 5] , [10 , 6] , [9 , 6] , [8 , 6] , [7 , 6]] , [[7 , 7] , [6 , 7] , [6 , 6] , [5 , 6]] , [[3 , 5] , [3 , 6] , [4 , 6]] , [[4 , 8] , [3 , 8] , [3 , 9] , [4 , 9] , [5 , 9] , [5 , 10]]]
+if question == 'n' :
+    n = input("Enter the positions: ").split(')')
+    n1 = n[0]
+    n2 = n[1]
+    me_1 = list(map(lambda x : int(x) , n1[1:].split(',')))
+    the_target = list(map(lambda x : int(x) , n2[1:].split(',')))
+    m = int(input("Enter the number of obstacles: "))
+    obstacles = []
+    for m1 in range(m):
+        m1 = input("Enter the obsracles: ").split(')')
+        m2 = 0 
+        obstacles1 = []
+        while (m2 + 1) < len(m1) :
+            m3 = m1[m2] 
+            m4 = list(map(lambda x : int(x) , m3[1:].split(',')))
+            obstacles1.append(m4)
+            m2 += 1
+        obstacles.append(obstacles1)
 ob = 0 
 my_pen.penup()
 while ob < len(obstacles) :
