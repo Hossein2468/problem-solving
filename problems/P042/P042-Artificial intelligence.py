@@ -51,6 +51,7 @@ target.goto(pos(the_target[0]) , pos(the_target[1]))
 distance = [the_target[0] - me_1[0] , the_target[1] - me_1[1]] 
 def hi(a , b , c , distance) :
     the_way = [me_1]
+    lost_ways = [] 
     while distance != [0 , 0] :
         if distance[0] > 0 and distance[1] > 0 : 
             a1 = [a[0] + 1 , a[1]] 
@@ -102,14 +103,14 @@ def hi(a , b , c , distance) :
                     x2 = False  
         if x1 == True :
             x1 = False
-            if a1 not in the_way :
+            if a1 not in the_way and a1 not in lost_ways :
                 the_way.append(a1) 
                 distance = [b[0] - a1[0] , b[1] - a1[1]]
                 a = a1 
                 x1 = True 
         if x2 == True and x1 == False :
             x2 = False 
-            if a2 not in the_way :
+            if a2 not in the_way and a2 not in lost_ways :
                 the_way.append(a2) 
                 distance = [b[0] - a2[0] , b[1] - a2[1]]
                 a = a2 
@@ -125,23 +126,34 @@ def hi(a , b , c , distance) :
                         x4 = False 
             if x3 == True :
                 x3 = False
-                if a3 not in the_way :
+                if a3 not in the_way and a3 not in lost_ways :
                     the_way.append(a3) 
                     distance = [b[0] - a3[0] , b[1] - a3[1]]
                     a = a3
                     x3 = True  
             if x4 == True and x3 == False:
                 x4 = False
-                if a4 not in the_way :
+                if a4 not in the_way and a4 not in lost_ways :
                     the_way.append(a4) 
                     distance = [b[0] - a4[0] , b[1] - a4[1]]
                     a = a4 
                     x4 = True 
+        if x1 == False and x2 == False and x3 == False and x4 == False and len(the_way) : 
+            lost = the_way[-1] 
+            lost_ways.append(lost) 
+            the_way.remove(lost)
+            if len(the_way) != 0 :
+                lost = the_way[-1] 
+                distance = [b[0] - lost[0] , b[1] - lost[1]]
+                a = lost
+            if len(the_way) == 0 : 
+                return 'IMPOSSIBLE' 
     return the_way
 
 hello = hi(me_1 , the_target , obstacles , distance)
 me.pendown()
 me.speed(1)
-for way in hello :
-    print(way)
-    me.goto(pos(way[0]) , pos(way[1]))
+print(hello)
+if hello != 'IMPOSSIBLE' :
+    for way in hello :
+        me.goto(pos(way[0]) , pos(way[1]))
