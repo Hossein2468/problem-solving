@@ -8,15 +8,11 @@
             int a = Convert.ToInt32(Console.ReadLine());
             if (a % 2 == 0)
             {
-                Console.Write("number ");
-                Console.Write(a);
-                Console.Write(" is even.");
+                Console.WriteLine($"number {a} is even. ");
             }
             else
             {
-                Console.Write("number ");
-                Console.Write(a);
-                Console.Write(" is odd. ");
+                Console.WriteLine($"number {a} is odd. ");
             }
         }
     }
