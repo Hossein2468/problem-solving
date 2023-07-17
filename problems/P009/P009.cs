@@ -1,11 +1,14 @@
-﻿namespace P009_prime_numbers
+﻿namespace Solution
 {
-    internal class Program
+    internal class P009
     {
-        static void Main(string[] args)
+        public void Solution()
         {
             Console.WriteLine("Enter the number: ");
             int n = Convert.ToInt32(Console.ReadLine());
+        }
+        public int Prime_Number(int n)
+        {
             static bool isprime(int m)
             {
                 bool p = true;
@@ -23,8 +26,9 @@
             for (int m = 2; m <= n; m++)
             {
                 if (isprime(m))
-                { Console.WriteLine(m); }
+                { return m; }
             }
+            return 0;
         }
     }
 }
