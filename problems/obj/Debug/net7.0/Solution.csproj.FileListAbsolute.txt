@@ -1,5 +1,0 @@
-F:\Hossein2468\problem-solving\problems\obj\Debug\net7.0\Solution.csproj.AssemblyReference.cache
-F:\Hossein2468\problem-solving\problems\obj\Debug\net7.0\Solution.GeneratedMSBuildEditorConfig.editorconfig
-F:\Hossein2468\problem-solving\problems\obj\Debug\net7.0\Solution.AssemblyInfoInputs.cache
-F:\Hossein2468\problem-solving\problems\obj\Debug\net7.0\Solution.AssemblyInfo.cs
-F:\Hossein2468\problem-solving\problems\obj\Debug\net7.0\Solution.csproj.CoreCompileInputs.cache
