@@ -2,7 +2,7 @@
 {
     internal class P001
     {
-        public void Main(string[] args)
+        public void Solution()
         {
             Console.WriteLine("Enter the number : ");
             int a = Convert.ToInt32(Console.ReadLine());
