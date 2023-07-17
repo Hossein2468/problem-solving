@@ -1,11 +1,15 @@
-﻿namespace P017_0_and__
+﻿namespace Solution
 {
-    internal class Program
+    internal class P017
     {
-        static void Main(string[] args)
+        public void Solution()
         {
             Console.WriteLine("Enter the number: ");
             int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Signs(n));
+        }
+        public string Signs(int n)
+        {
             int i = n;
             while (n >= 0)
             {
@@ -24,6 +28,7 @@
                 Console.WriteLine();
                 n--;
             }
+            return "finish";
         }
     }
 }
