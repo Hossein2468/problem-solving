@@ -1,8 +1,8 @@
-﻿namespace P014_merge_method
+﻿namespace Solution
 {
-    internal class Program
+    internal class P014
     {
-        static void Main(string[] args)
+        public void Solution()
         {
             List<string> list1 = new List<string>();
             List<string> list2 = new List<string>();
@@ -20,7 +20,11 @@
                 var y = Console.ReadLine();
                 list2.Add(y);
             }
-            List<string> list3 = new List<string>(); 
+            Console.WriteLine(Merge(list1, list2));
+        }
+        public string Merge(List<string> list1, List<string> list2)
+        {
+            List<string> list3 = new List<string>();
             foreach (var c in list1)
             {
                 list3.Add(c);
@@ -29,7 +33,7 @@
             {
                 list3.Add(d);
             }
-            Console.WriteLine(string.Join(" , " , list3));
+            return string.Join(" , ", list3);
         }
     }
 }
