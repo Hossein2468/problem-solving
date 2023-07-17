@@ -1,15 +1,18 @@
-﻿namespace P008_factorial
+﻿namespace Solution
 {
-    internal class Program
+    internal class P008
     {
-        static void Main(string[] args)
+        public void Solution()
         {
             Console.WriteLine("Enter the number: ");
             int a = Convert.ToInt32(Console.ReadLine());
+        }
+        public int Factorial(int a)
+        {
             int b = 1;
             for (int c = 1; c <= a; c++)
             { b = b * c; }
-            Console.WriteLine(b);
+            return b;
         }
     }
 }
