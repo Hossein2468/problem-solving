@@ -1,11 +1,15 @@
-﻿namespace P019_pascal_khayyam_s_triangle
+﻿namespace Solution
 {
-    internal class Program
+    internal class P019
     {
-        static void Main(string[] args)
+        public void Solution()
         {
             Console.WriteLine("Enter the number: ");
             int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Pascal_Khayyams_Triangle(n));
+        }
+        public string Pascal_Khayyams_Triangle(int n)
+        {
             List<int> a = new List<int>()
             { 1 };
             List<int> b = new List<int>()
@@ -41,6 +45,7 @@
                     if (b.Count <= n) { Console.WriteLine(string.Join(", ", b)); }
                 }
             }
+            return "finish";
         }
     }
 }
