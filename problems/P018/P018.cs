@@ -1,11 +1,15 @@
-﻿namespace P018_twin_primes
+﻿namespace Solution
 {
-    internal class Program
+    internal class P018
     {
-        static void Main(string[] args)
+        public void Solution()
         {
             Console.WriteLine("Enter the number: ");
             int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Twin_Primes(n));
+        }
+        public string Twin_Primes(int n)
+        {
             static bool is_prime(int m)
             {
                 bool p = true;
@@ -33,6 +37,7 @@
                     }
                 }
             }
+            return "finish";
         }
     }
 }
