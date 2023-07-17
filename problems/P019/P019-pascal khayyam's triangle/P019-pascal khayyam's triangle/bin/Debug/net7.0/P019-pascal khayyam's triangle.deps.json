@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "P019-pascal khayyam's triangle/1.0.0": {
+        "runtime": {
+          "P019-pascal khayyam's triangle.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "P019-pascal khayyam's triangle/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\bin\Debug\net7.0\P019-pascal khayyam's triangle.exe
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\bin\Debug\net7.0\P019-pascal khayyam's triangle.deps.json
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\bin\Debug\net7.0\P019-pascal khayyam's triangle.runtimeconfig.json
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\bin\Debug\net7.0\P019-pascal khayyam's triangle.dll
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\bin\Debug\net7.0\P019-pascal khayyam's triangle.pdb
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\obj\Debug\net7.0\P019-pascal khayyam's triangle.csproj.AssemblyReference.cache
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\obj\Debug\net7.0\P019-pascal khayyam's triangle.GeneratedMSBuildEditorConfig.editorconfig
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\obj\Debug\net7.0\P019-pascal khayyam's triangle.AssemblyInfoInputs.cache
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\obj\Debug\net7.0\P019-pascal khayyam's triangle.AssemblyInfo.cs
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\obj\Debug\net7.0\P019-pascal khayyam's triangle.csproj.CoreCompileInputs.cache
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\obj\Debug\net7.0\P019-pascal khayyam's triangle.dll
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\obj\Debug\net7.0\refint\P019-pascal khayyam's triangle.dll
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\obj\Debug\net7.0\P019-pascal khayyam's triangle.pdb
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\obj\Debug\net7.0\P019-pascal khayyam's triangle.genruntimeconfig.cache
+F:\Hossein2468\problem-solving\problems\P019\P019-pascal khayyam's triangle\P019-pascal khayyam's triangle\obj\Debug\net7.0\ref\P019-pascal khayyam's triangle.dll

@@ -1,0 +1,15 @@
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\obj\Debug\net7.0\P010-primorial.csproj.AssemblyReference.cache
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\obj\Debug\net7.0\P010-primorial.GeneratedMSBuildEditorConfig.editorconfig
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\obj\Debug\net7.0\P010-primorial.AssemblyInfoInputs.cache
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\obj\Debug\net7.0\P010-primorial.AssemblyInfo.cs
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\obj\Debug\net7.0\P010-primorial.csproj.CoreCompileInputs.cache
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\bin\Debug\net7.0\P010-primorial.exe
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\bin\Debug\net7.0\P010-primorial.deps.json
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\bin\Debug\net7.0\P010-primorial.runtimeconfig.json
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\bin\Debug\net7.0\P010-primorial.dll
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\bin\Debug\net7.0\P010-primorial.pdb
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\obj\Debug\net7.0\P010-primorial.dll
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\obj\Debug\net7.0\refint\P010-primorial.dll
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\obj\Debug\net7.0\P010-primorial.pdb
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\obj\Debug\net7.0\P010-primorial.genruntimeconfig.cache
+F:\Hossein2468\problem-solving\problems\P010\P010-primorial\P010-primorial\obj\Debug\net7.0\ref\P010-primorial.dll

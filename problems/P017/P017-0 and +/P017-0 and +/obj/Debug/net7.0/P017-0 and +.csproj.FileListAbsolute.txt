@@ -1,0 +1,15 @@
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\bin\Debug\net7.0\P017-0 and +.exe
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\bin\Debug\net7.0\P017-0 and +.deps.json
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\bin\Debug\net7.0\P017-0 and +.runtimeconfig.json
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\bin\Debug\net7.0\P017-0 and +.dll
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\bin\Debug\net7.0\P017-0 and +.pdb
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\obj\Debug\net7.0\P017-0 and +.csproj.AssemblyReference.cache
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\obj\Debug\net7.0\P017-0 and +.GeneratedMSBuildEditorConfig.editorconfig
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\obj\Debug\net7.0\P017-0 and +.AssemblyInfoInputs.cache
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\obj\Debug\net7.0\P017-0 and +.AssemblyInfo.cs
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\obj\Debug\net7.0\P017-0 and +.csproj.CoreCompileInputs.cache
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\obj\Debug\net7.0\P017-0 and +.dll
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\obj\Debug\net7.0\refint\P017-0 and +.dll
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\obj\Debug\net7.0\P017-0 and +.pdb
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\obj\Debug\net7.0\P017-0 and +.genruntimeconfig.cache
+F:\Hossein2468\problem-solving\problems\P017\P017-0 and +\P017-0 and +\obj\Debug\net7.0\ref\P017-0 and +.dll

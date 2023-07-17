@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "P021-solar system/1.0.0": {
+        "runtime": {
+          "P021-solar system.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "P021-solar system/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
