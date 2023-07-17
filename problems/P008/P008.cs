@@ -6,6 +6,7 @@
         {
             Console.WriteLine("Enter the number: ");
             int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Factorial(a));
         }
         public int Factorial(int a)
         {
