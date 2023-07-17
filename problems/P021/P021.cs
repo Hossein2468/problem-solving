@@ -1,8 +1,8 @@
-﻿namespace P021_solar_system
+﻿namespace Solution
 {
-    internal class Program
+    internal class P021
     {
-        static void Main(string[] args)
+        public void Solution()
         {
             Dictionary<string, int> solar_system = new Dictionary<string, int>()
             {
