@@ -1,11 +1,15 @@
-﻿namespace P006_sum_numbers
+﻿namespace Solution
 {
-    internal class Program
+    internal class P006
     {
-        static void Main(string[] args)
+        public void Solution()
         {
             Console.WriteLine("Enter the number: ");
             int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Sum(a)); 
+        }
+        public int Sum(int a)
+        {
             int b = 0;
             int c = 0;
             while (b <= a)
@@ -13,7 +17,7 @@
                 c = c + b;
                 b++;
             }
-            Console.WriteLine(c); 
+            return c; 
         }
     }
 }

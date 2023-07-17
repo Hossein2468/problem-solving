@@ -27,6 +27,7 @@ nupkg/
 *.sln.docstates
 *.sln
 *.csproj
+problems/Program.cs
 
 # Build results
 [Dd]ebug/
