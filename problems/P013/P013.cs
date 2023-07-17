@@ -1,11 +1,17 @@
-﻿namespace P013_prime_factors
+﻿using System.Diagnostics.Tracing;
+
+namespace Solution
 {
-    internal class Program
+    internal class P013
     {
-        static void Main(string[] args)
+        public void Solution()
         {
             Console.WriteLine("Enter the number: ");
             int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Prime_Factors(n));
+        }
+        public int Prime_Factors(int n)
+        {
             static bool is_prime(int m)
             {
                 bool p = true;
@@ -38,7 +44,8 @@
                 }
             }
             foreach (var a in prime_factors)
-            { Console.WriteLine(a); }
+            { return a; }
+            return 0;
         }
     }
 }
