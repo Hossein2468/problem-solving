@@ -1,11 +1,15 @@
-﻿namespace P004_numbers
+﻿namespace Solution
 {
-    internal class Program
+    internal class P004
     {
-        static void Main(string[] args)
+        public void Solution()
         {
             Console.WriteLine("Enter the number: ");
             int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Number(a));
+        }
+        public string Number(int a)
+        {
             Dictionary<int, string> numbers = new Dictionary<int, string>()
             {
                 {1 , "One" } ,
@@ -19,7 +23,7 @@
                 {9 , "Nine" } ,
                 {10 , "Ten" }
             };
-            Console.WriteLine(numbers[a]);
+            return numbers[a];
         }
     }
 }
