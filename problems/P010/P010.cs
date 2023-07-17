@@ -1,11 +1,15 @@
-﻿namespace P010_primorial
+﻿namespace Solution
 {
-    internal class Program
+    internal class P010
     {
-        static void Main(string[] args)
+        public void Solution()
         {
             Console.WriteLine("Enter the number: ");
             int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Primorial(n));
+        }
+        public int Primorial(int n)
+        {
             static bool isprime(int m)
             {
                 bool p = true;
@@ -19,14 +23,14 @@
                     }
                 }
                 return p;
-             }
-                int a = 1;
-                for (int m = 2; m <= n; m++)
-                {
-                    if (isprime(m) == true)
-                    { a = m * a; }
-                }
-                Console.WriteLine(a);
+            }
+            int a = 1;
+            for (int m = 2; m <= n; m++)
+            {
+                if (isprime(m) == true)
+                { a = m * a; }
+            }
+            return a;
         }
     }
 }
