@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Solution
+﻿namespace Solution
 {
     internal class P029
     {
