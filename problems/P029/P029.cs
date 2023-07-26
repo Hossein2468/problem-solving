@@ -68,23 +68,12 @@
         }
         public string Highest_Count(List<int> n)
         {
-            List<int> numbers = new List<int>();
-            List<int> Counts = new List<int>();
-            foreach (var a in n)
-            {
-                var b = n.Count(c => c == a );
-                Counts.Add(b);
-            }
-            var c = Counts.IndexOf(Max(Counts));
-            numbers.Add(n[c]);
-            for (int d = 0; d < Max(Counts); d++)
-            {
-                Counts[c] = 0;
-                c++;
-            }
-            var e = Counts.IndexOf(Max(Counts));
-            numbers.Add(n[e]);
-            return $"{numbers[0]} ,{numbers[1]}";
+            var d = n.GroupBy(x => x)
+                .Select(x => new { Number = x.Key, Count = x.Count() })
+                .OrderByDescending(x => x.Count)
+                .Take(2)
+                .ToList();
+            return $"{d[0].Number} , {d[1].Number}";
         }
         public Int128 Multiply(List<int> n)
         {
